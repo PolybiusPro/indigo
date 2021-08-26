@@ -4,6 +4,7 @@ $content_padding_top: 24px;
 $content-padding-bottom: 10px;
 $header-height: 55px;
 $footer-height: 125.5px;
+$color-black: #000;
 
 body, body.view-profile {
   min-height: initial;
@@ -47,7 +48,7 @@ header.global-header {
     overflow: visible;  // fix for Safari
   }
   background-color: #2fa4e7;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 20), 0 4px 5px 0 rgba(0, 0, 0, 14), 0 1px 10px 0 rgba(0, 0, 0, 12);
+  box-shadow: 0 2px 4px -1px rgba($color-black, .2), 0 4px 5px 0 rgba($color-black, .14), 0 1px 10px 0 rgba($color-black, .12);
 }
 
 header.global-header .nav-links .secondary .user-image-frame {
