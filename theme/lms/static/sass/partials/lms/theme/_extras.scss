@@ -1,10 +1,11 @@
 /////////////////// General
 
-$content_padding_top: 0;
-$content-padding-bottom: 0;
+$content_padding_top: 24px;
+$content-padding-bottom: 10px;
 $header-height: 55px;
 $footer-height: 125.5px;
 $color-black: #000;
+$scholar-blue: #2fa4e7;
 
 body, body.view-profile {
   min-height: initial;
@@ -47,8 +48,43 @@ header.global-header {
     z-index: 200; // necessary to keep the header on top of other elements
     overflow: visible;  // fix for Safari
   }
-  background-color: #2fa4e7;
+  background-color: $scholar-blue;
   box-shadow: 0 2px 4px -1px rgba($color-black, .2), 0 4px 5px 0 rgba($color-black, .14), 0 1px 10px 0 rgba($color-black, .12);
+}
+
+@media (min-width: 991px) {
+  .nav-tab a:hover, a.active {
+    border: 1px solid #fff !important;
+    margin-right: 15px;
+  }
+  a:not(.btn){
+    transition: none;
+  }
+}
+
+.global-header .nav-links .main .nav-item {
+  padding-top: 5px;
+}
+
+.global-header .nav-links .main .nav-item a{
+  color: #fff !important;
+}
+.nav-tab a {
+  padding-bottom: 5px !important;
+}
+
+.dropdown-item a {
+  color: $scholar-blue !important;
+}
+
+.global-header{
+  line-height: 1;
+  padding-bottom: 0;
+}
+
+.main, .secondary, .header-logo {
+  position: relative;
+  bottom: 5px;
 }
 
 header.global-header .nav-links .secondary .user-image-frame {
@@ -57,6 +93,10 @@ header.global-header .nav-links .secondary .user-image-frame {
 
 header.global-header .nav-links .secondary .dropdown-user-menu {
   position: fixed;
+}
+
+.hamburger-menu .line{
+  background: #fff !important;
 }
 
 /////////////////// Sign in form
