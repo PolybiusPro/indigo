@@ -99,6 +99,18 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
   background: #fff !important;
 }
 
+.line {
+  height: 2px !important;
+  width: 20px !important
+}
+.line:nth-child(1), .line:nth-child(2){
+  top: 5px !important;
+}
+.line:nth-child(4){
+  top: 10px !important;
+}
+
+
 /////////////////// Sign in form
 
 .login-register .form-field {
